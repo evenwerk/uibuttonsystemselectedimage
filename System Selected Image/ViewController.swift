@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var button:UIButton!
+    
+    @IBAction func buttonPress(sender: UIButton) {
+        button.isSelected = !button.isSelected
+    }
 
 
 }
